@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group 'Kitten'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.sparkjava:spark-core:2.9.4'
+    implementation 'com.sparkjava:spark-template-handlebars:2.7.1'
+    implementation 'org.slf4j:slf4j-simple:2.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}
